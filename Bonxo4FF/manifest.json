@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "Bonxo",
+    "version": "1.0",
+  
+    "description": "Adds a Bonxo buddy  to all webpages matching .com.",
+  
+    "icons": {
+      "48": "icons/icon.png"
+    },
+    "web_accessible_resources": [
+      "icons/bonxo1.svg"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.com/*","*://*/*"],
+        "js": ["script.js"]
+      }
+    ]
+  
+  }
+  
